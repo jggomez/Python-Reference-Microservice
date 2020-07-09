@@ -14,7 +14,7 @@ This microservice has the following:
     - Test coverage.
     - Docker configuration.
     - Configuration for cloud-run deployment.
-    - Configuration file for continuos deployment with GCP Cloud Build.
+    - Configuration file for continuous deployment with GCP Cloud Build.
 
 - Twitter [@jggomezt](https://twitter.com/jggomezt)
 - My Podcast [Snippets Tech](https://anchor.fm/jggomez)
