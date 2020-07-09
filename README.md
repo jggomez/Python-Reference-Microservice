@@ -16,9 +16,9 @@ This microservice has the following:
     - Configuration for cloud-run deployment.
     - Configuration file for continuos deployment with GCP Cloud Build.
 
-### My Twitter [@jggomezt] (https://twitter.com/jggomezt) 
-### My Podcast [Snippets Tech] (https://anchor.fm/jggomez)
-### My youtube channel [devhack] (https://www.youtube.com/devhack)
+Twitter [@jggomezt](https://twitter.com/jggomezt) 
+My Podcast [Snippets Tech](https://anchor.fm/jggomez)
+My youtube channel [devhack](https://www.youtube.com/devhack)
 
 LICENSE
 The MIT License (MIT)
