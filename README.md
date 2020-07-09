@@ -6,6 +6,7 @@ This microservice has the following:
 
     - Pipfile to manage project dependencies.
     - Clean Architecture - SOLID.
+    - Neo4j Database.
     - Dependency Injection.
     - Flask micro-framework and gunicorn.
     - Unit tests with gherkin syntax.
