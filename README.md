@@ -20,9 +20,9 @@ This microservice has the following:
 - My Podcast [Snippets Tech](https://anchor.fm/jggomez)
 - My youtube channel [devhack](https://www.youtube.com/devhack)
 
+
 LICENSE
 The MIT License (MIT)
-
 Copyright (c) 2018 Juan Guillermo Gómez
 
 
