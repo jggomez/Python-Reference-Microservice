@@ -1,0 +1,1 @@
+from .get_type_games_repository import GetAllTypeGamesRepository

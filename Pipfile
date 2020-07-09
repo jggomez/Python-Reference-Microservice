@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+coverage = "*"
+bandit = "*"
+
+[packages]
+flask = "*"
+flask-injector = "*"
+google-cloud-logging = "*"
+flask-api = "*"
+flask-expects-json = "*"
+neo4j = "==1.7.6"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+bp_tests = "pytest -v bptest/"
+bp_tests_coverage = "coverage run -m pytest bptest/"
+bp_tests_cov_report = "coverage report -m"
+bp_tests_cov_report_html = "coverage html"
+endpoints_tests = "pytest -v endpoints/"
+endpoints_tests_coverage = "coverage run -m pytest endpoints/"
+endpoints_tests_cov_report = "coverage report -m"
+endpoints_cov_report_html = "coverage html"

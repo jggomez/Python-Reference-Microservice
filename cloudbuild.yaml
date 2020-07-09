@@ -1,0 +1,18 @@
+steps:
+  - name: "gcr.io/kaniko-project/executor:latest"
+    args: ['--destination=gcr.io/$PROJECT_ID/NAME_SERVICE',
+         '--cache=true']
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "beta",
+        "run",
+        "deploy",
+        "NAME_SERVICE",
+        "--allow-unauthenticated",
+        "--image=gcr.io/$PROJECT_ID/NAME_SERVICE",
+        "--update-env-vars=NAME_VAR=VALUE_VAR",
+        "--platform",
+        "managed",
+        "--region=us-central1",
+      ]
