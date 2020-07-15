@@ -23,6 +23,6 @@ This microservice has the following:
 
 LICENSE
 The MIT License (MIT)
-Copyright (c) 2018 Juan Guillermo Gómez
+Copyright (c) 2020 Juan Guillermo Gómez
 
 
