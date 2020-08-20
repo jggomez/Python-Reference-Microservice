@@ -10,7 +10,7 @@ This microservice has the following:
     - Dependency Injection with FastAPI.
     - FastAPI framework, high performance, ready for production.
     - Uvicorn.
-    - Mypy - optional static type checker.
+    - Mypy - Optional static type checker.
     - Pre-commit - Git hook scripts are useful for identifying simple issues before     submission to code review.
     - Unit tests with gherkin syntax.
     - Integration tests with gherkin syntax.
@@ -27,5 +27,3 @@ This microservice has the following:
 LICENSE
 The MIT License (MIT)
 Copyright (c) 2018 Juan Guillermo Gómez
-
-
