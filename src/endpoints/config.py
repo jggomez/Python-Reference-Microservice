@@ -1,8 +1,10 @@
 import os
 
-URI_KEY = "NEO4J_URI"
-USER_KEY = "NEO4J_USER"
-PASSWORD_KEY = "NEO4J_PASS"
+from typing_extensions import Final
+
+URI_KEY: Final = "NEO4J_URI"
+USER_KEY: Final = "NEO4J_USER"
+PASSWORD_KEY: Final = "NEO4J_PASS"
 
 
 class Config:

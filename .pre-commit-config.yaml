@@ -1,0 +1,49 @@
+repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes
+
+  # reorder Python imports
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v1.9.0
+    hooks:
+      - id: reorder-python-imports
+
+  # format Python code with black
+  - repo: https://github.com/ambv/black
+    rev: 19.10b0
+    hooks:
+      - id: black
+
+  # static type checking with mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.761
+    hooks:
+      - id: mypy
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
+    sha: v1.0.4
+    hooks:
+      - id: python-bandit-vulnerability-check
+
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: ''
+    hooks:
+      - id: flake8
+        args: ['--ignore=E501']
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-ast
+      - id: check-builtin-literals
+      - id: detect-private-key
+      - id: mixed-line-ending
+      - id: check-json
+      - id: no-commit-to-branch
+        args: [--branch, develop]

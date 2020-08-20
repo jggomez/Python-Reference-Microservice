@@ -7,8 +7,11 @@ This microservice has the following:
     - Pipfile to manage project dependencies.
     - Clean Architecture - SOLID.
     - Neo4j Database.
-    - Dependency Injection.
-    - Flask micro-framework and gunicorn.
+    - Dependency Injection with FastAPI.
+    - FastAPI framework, high performance, ready for production.
+    - Uvicorn.
+    - Mypy - optional static type checker.
+    - Pre-commit - Git hook scripts are useful for identifying simple issues before     submission to code review.
     - Unit tests with gherkin syntax.
     - Integration tests with gherkin syntax.
     - Test coverage.

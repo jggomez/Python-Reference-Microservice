@@ -7,14 +7,15 @@ verify_ssl = true
 pytest = "*"
 coverage = "*"
 bandit = "*"
+pre-commit = "*"
+flake8 = "*"
+mypy = "*"
 
 [packages]
-flask = "*"
-flask-injector = "*"
 google-cloud-logging = "*"
-flask-api = "*"
-flask-expects-json = "*"
 neo4j = "==1.7.6"
+uvicorn = "*"
+fastapi = "*"
 
 [requires]
 python_version = "3.7"

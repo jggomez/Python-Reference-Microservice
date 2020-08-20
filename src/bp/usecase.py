@@ -1,4 +1,5 @@
-from abc import ABC, abstractmethod
+from abc import ABC
+from abc import abstractmethod
 
 
 class UseCase(ABC):
@@ -8,4 +9,4 @@ class UseCase(ABC):
 
     @abstractmethod
     def run(self, params=None):
-        pass # pragma: no coverColo
+        pass  # pragma: no coverColo

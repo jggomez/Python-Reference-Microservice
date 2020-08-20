@@ -1,4 +1,5 @@
 import pytest
+
 from .steps.get_all_type_games_endpoint_steps import ShouldGetAllTypeGameSteps
 from .steps.get_type_games_by_user_endpoint_steps import ShouldGetTypeGameByUserSteps
 
@@ -11,7 +12,7 @@ TYPE_GAMES_ALL_DATA_TEST = [
         "hasmedals": False,
         "type": "ARCADE1",
         "url_background": "image1.png",
-        "points": 20
+        "points": 20,
     },
     {
         "name": "type_game_2",
@@ -19,7 +20,7 @@ TYPE_GAMES_ALL_DATA_TEST = [
         "hasmedals": True,
         "type": "ARCADE2",
         "url_background": "image2.png",
-        "points": 30
+        "points": 30,
     },
     {
         "name": "type_game_3",
@@ -27,7 +28,7 @@ TYPE_GAMES_ALL_DATA_TEST = [
         "hasmedals": False,
         "type": "ARCADE3",
         "url_background": "image3.png",
-        "points": 10
+        "points": 10,
     },
     {
         "name": "type_game_1",
@@ -35,8 +36,8 @@ TYPE_GAMES_ALL_DATA_TEST = [
         "hasmedals": False,
         "type": "ARCADE1",
         "url_background": "image1.png",
-        "points": 50
-    }
+        "points": 50,
+    },
 ]
 
 TYPE_GAMES_BY_USER_DATA_TEST = [
@@ -46,7 +47,7 @@ TYPE_GAMES_BY_USER_DATA_TEST = [
         "hasmedals": False,
         "type": "ARCADE1",
         "url_background": "image1.png",
-        "points": 20
+        "points": 20,
     },
     {
         "name": "type_game_2",
@@ -54,7 +55,7 @@ TYPE_GAMES_BY_USER_DATA_TEST = [
         "hasmedals": True,
         "type": "ARCADE2",
         "url_background": "image2.png",
-        "points": 30
+        "points": 30,
     },
     {
         "name": "type_game_3",
@@ -62,21 +63,18 @@ TYPE_GAMES_BY_USER_DATA_TEST = [
         "hasmedals": False,
         "type": "ARCADE3",
         "url_background": "image3.png",
-        "points": 10
-    }
+        "points": 10,
+    },
 ]
 
 
 @pytest.mark.parametrize(
-    "user_id, type_games",
-
-    [(USER_ID_DATA_TEST, TYPE_GAMES_ALL_DATA_TEST)]
-
+    "user_id, type_games", [(USER_ID_DATA_TEST, TYPE_GAMES_ALL_DATA_TEST)]
 )
-def test_should_get_all_type_games_endpoint(flask_test_client, user_id, type_games):
+def test_should_get_all_type_games_endpoint(client, user_id, type_games):
     test = ShouldGetAllTypeGameSteps()
     try:
-        test.given(flask_test_client, user_id, type_games)
+        test.given(client, user_id, type_games)
         test.when()
         test.then()
     finally:
@@ -84,15 +82,12 @@ def test_should_get_all_type_games_endpoint(flask_test_client, user_id, type_gam
 
 
 @pytest.mark.parametrize(
-    "user_id, type_games",
-
-    [(USER_ID_DATA_TEST, TYPE_GAMES_BY_USER_DATA_TEST)]
-
+    "user_id, type_games", [(USER_ID_DATA_TEST, TYPE_GAMES_BY_USER_DATA_TEST)]
 )
-def test_should_get_type_games_by_user_endpoint(flask_test_client, user_id, type_games):
+def test_should_get_type_games_by_user_endpoint(client, user_id, type_games):
     test = ShouldGetTypeGameByUserSteps()
     try:
-        test.given(flask_test_client, user_id, type_games)
+        test.given(client, user_id, type_games)
         test.when()
         test.then()
     finally:
