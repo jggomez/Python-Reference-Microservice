@@ -1,4 +1,4 @@
-from ..util.util_neo4j import UtilNeo4j
+from .util.util_neo4j import UtilNeo4j
 
 CODE = "code"
 NAME = "name"
@@ -8,7 +8,6 @@ LEVEL_EXPECT = 50
 
 
 class ShouldGetAllTypeGameSteps:
-
     def given(self, client, user_id, type_games):
         self.user_id = user_id
         self.client = client
@@ -16,12 +15,10 @@ class ShouldGetAllTypeGameSteps:
         self.util_neo4j = UtilNeo4j()
         self.util_neo4j.create_user(user_id, user_id)
         self.util_neo4j.create_type_games(self.type_games)
-        self.util_neo4j.create_relationship_played_user_typegame(
-            user_id, type_games)
+        self.util_neo4j.create_relationship_played_user_typegame(user_id, type_games)
 
     def when(self):
-        self.response = self.client.get(
-            f'/apis/typegames/1.0.0?userid={self.user_id}')
+        self.response = self.client.get(f"/apis/typegames/1.0.0?userid={self.user_id}")
 
     def then(self):
         assert self.response is not None

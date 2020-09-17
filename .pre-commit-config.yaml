@@ -44,6 +44,5 @@ repos:
       - id: check-builtin-literals
       - id: detect-private-key
       - id: mixed-line-ending
-      - id: check-json
       - id: no-commit-to-branch
         args: [--branch, develop]

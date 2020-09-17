@@ -4,7 +4,7 @@ This repository is a python reference microservice.
 
 This microservice has the following:
 
-    - Pipfile to manage project dependencies.
+    - Poetry to manage project dependencies.
     - Clean Architecture - SOLID.
     - Neo4j Database.
     - Dependency Injection with FastAPI.

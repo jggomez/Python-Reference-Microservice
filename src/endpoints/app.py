@@ -1,7 +1,10 @@
 import google.cloud.logging
+from dotenv import load_dotenv
 from fastapi import FastAPI
 
 from . import type_games_endpoint
+
+load_dotenv()
 
 client = google.cloud.logging.Client()
 client.setup_logging()

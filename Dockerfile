@@ -1,9 +1,10 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 COPY src/ /app/
-COPY Pipfile /app
-COPY Pipfile.lock /app
+COPY pyproject.toml /app/
+COPY poetry.lock /app/
 WORKDIR /app
-RUN pip install pipenv
-RUN pipenv install --system --deploy --ignore-pipfile
+RUN pip install poetry
+RUN poetry config virtualenvs.create false
+RUN poetry install --no-root --no-dev --no-interaction
 # set enviroment variables
 ENV NEO4J_USER=neo4j
