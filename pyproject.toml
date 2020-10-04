@@ -8,7 +8,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 google-cloud-logging = "^1.15.1"
 neo4j = "1.7.6"
 fastapi = "^0.61.1"
