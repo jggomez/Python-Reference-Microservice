@@ -6,7 +6,7 @@ from src.bp.domain import TypeGame
 TYPE_GAMES__RETURN_DATA = [
     TypeGame(1, "game1", "image1", "ARCADE", "PSICO", "20", "Puntos", 0),
     TypeGame(2, "game2", "image2", "ARCADE", "ING", "10", "Puntos", 0),
-    TypeGame(3, "game3", "image3", "ARCADE", "MED", "30", "Puntos", 0),
+    TypeGame(3, "game3", "image3", "ARCADE", "MED", "50", "Puntos", 0),
 ]
 
 USER_ID_DATA = "test_user_get_type_games"
