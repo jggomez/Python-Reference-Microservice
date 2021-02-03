@@ -28,10 +28,10 @@ repos:
       - id: python-bandit-vulnerability-check
 
   - repo: https://gitlab.com/pycqa/flake8
-    rev: ''
+    rev: ""
     hooks:
       - id: flake8
-        args: ['--ignore=E501']
+        args: ["--ignore=E501"]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.4.0
