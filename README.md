@@ -12,6 +12,7 @@ This microservice has the following:
     - Uvicorn.
     - Mypy - Optional static type checker.
     - Pre-commit - Git hook scripts are useful for identifying simple issues before     submission to code review.
+    - Pre-commit has the commitizen hook.
     - Unit tests with gherkin syntax.
     - Integration tests with gherkin syntax.
     - Test coverage.
